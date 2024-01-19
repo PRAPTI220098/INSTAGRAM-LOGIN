@@ -1,3 +1,4 @@
+os
 requests
 telebot
 user_agent
