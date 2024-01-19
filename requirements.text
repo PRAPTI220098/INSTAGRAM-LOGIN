@@ -1,1 +1,6 @@
-r
+telebot
+requests
+flask
+json
+time
+user_agent
