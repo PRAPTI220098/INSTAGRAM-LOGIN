@@ -127,4 +127,4 @@ def url(message):
         bot.reply_to(message, f'❌ _Invalid username. Please make sure the Instagram username is correct._', parse_mode="Markdown")
         print(f"{e}")
 
-bot.infinity_polling()
+bot.polling()
