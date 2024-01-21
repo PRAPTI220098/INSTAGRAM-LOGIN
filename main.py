@@ -106,7 +106,7 @@ def url(message):
         }
         da = {'username': f'{message.text.lstrip("@")}'}
         re = requests.get(url3, headers=he, json=da).json()
-        url4 = requests.get(f"https://22a15f7d-af7f-46c3-9408-3ae84ff49e9c-00-30fjjs3ronllj.janeway.replit.dev/sanchit={message.text.lstrip('@')}")
+        #url4 = requests.get(f"https://22a15f7d-af7f-46c3-9408-3ae84ff49e9c-00-30fjjs3ronllj.janeway.replit.dev/sanchit={message.text.lstrip('@')}")
         fid = re['data']['user']['fbid']
         pn = re['data']['user']['business_phone_number']
         em = re['data']['user']['business_email']
