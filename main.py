@@ -1,13 +1,20 @@
 import os
-import requests
-import telebot
-import json
-import time
-from telebot import types
-import flask
-from user_agent import generate_user_agent
+try:
+	import requests
+	import telebot
+	import json
+	import time
+	from telebot import types
+	import flask
+	from user_agent import generate_user_agent
+except:
+	os.system("pip install requests")
+	os.system("pip install telebot")
+	os.system("pip install flask")
+	os.system("pip install user_agent")
+	os.system("clear")
 
-tk = os.environ.get('BOT_TOK')
+tk = "6235253931:AAE5X9jrx4UOOFd9X_vkz_ip7zYWbPJA-So"
 bot = telebot.TeleBot(tk)
 
 ch = types.InlineKeyboardButton(text='''🗽 𝕮𝖍𝖆𝖓𝖓𝖊𝖑''', url="https://t.me/+Q5RcaQe268lmYmI9")
@@ -127,4 +134,5 @@ def url(message):
         bot.reply_to(message, f'❌ _Invalid username. Please make sure the Instagram username is correct._', parse_mode="Markdown")
         print(f"{e}")
 
-bot.polling()
+print("Bot Is Alive")
+bot.infinity_polling()
