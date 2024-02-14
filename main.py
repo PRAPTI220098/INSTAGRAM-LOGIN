@@ -14,8 +14,7 @@ except:
 	os.system("pip install flask")
 	os.system("pip install user_agent")
 	os.system("clear")
-
-tk = "6235253931:AAE5X9jrx4UOOFd9X_vkz_ip7zYWbPJA-So"
+tk="6235253931:AAEO6QUyBtZzp0sTGeLCXtRHyo4J60gJdWM"
 bot = telebot.TeleBot(tk)
 
 ch = types.InlineKeyboardButton(text='''🗽 𝕮𝖍𝖆𝖓𝖓𝖊𝖑''', url="https://t.me/+Q5RcaQe268lmYmI9")
