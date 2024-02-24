@@ -7,7 +7,6 @@ try:
 	from telebot import types
 	import flask
 	from user_agent import generate_user_agent
-	from hh import keep_alive
 except:
 	os.system("pip install requests")
 	os.system("pip install telebot")
@@ -133,7 +132,5 @@ def url(message):
     except Exception as e:
         bot.reply_to(message, f'❌ _Invalid username. Please make sure the Instagram username is correct._', parse_mode="Markdown")
         print(f"{e}")
-
-print("Bot Is Alive")
-keep_alive()
+	    
 bot.infinity_polling()
